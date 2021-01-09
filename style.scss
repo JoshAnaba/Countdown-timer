@@ -24,12 +24,25 @@ body{
                 
             }
        }
-
-       #pattern-hills{
-           width: 100%;
+.footer-svg{
            position: relative;
-           bottom: 450px;
+           bottom: 480px;
+        #pattern-hill{
+           width: 100%;
+           
+            }
+            .socials{
+                margin: 10px;
+                position: relative;
+                top: 120px;
+                width: 60px;
+                cursor: pointer;
+                 path:hover{
+                    fill:hsl(345, 95%, 68%);
+                    
+            }
        }
+    }
 
        
 
@@ -101,33 +114,67 @@ body{
 
 @media (max-width: 600px){
 
-    .container{
-        width: 100%;
-        #svg-absolute{
-            width:500px ;
-             
-        }
+    body{
+        .container{
+            width: 100%;
+            letter-spacing: 3px;
+            #svg-absolute{
+                width:100% ;
+                height: 650px;
+                
+            }
 
-        #pattern-hittls{
-            width: 500px;
-        }
-    }
+            .footer-svg{
+                position: relative;
+                bottom: 480px;
+                width: 100%;
+             #pattern-hills{
+                width: 100%;
+                 }
+                 .socials{
+                     margin: 10px;
+                     position: relative;
+                     top: 120px;
+                     width: 60px;
+                     cursor: pointer;
+                      path:hover{
+                         fill:hsl(345, 95%, 68%);
+                         
+                 }
+            }
+         }
+     
 
-    .content{
-        width: 500px;
-        .countdown{
-            width: 450px;
 
-            .countdown-column{
-                >div{
-                    h1{
-                        font-size:80rem;
-                    }
-                    .time-box{
-                        width: 100px;
-                        .top-box,.bottom-box{
-                            width:100px 
+            .content{
+                width: 100%;
+                h2{
+                    font-size: 30px;
+                }
+                .countdown{
+                    width: 100%;
+                    justify-content: space-around;
+    
+                    .countdown-column{
+                        >div{
+                            h1{
+                                font-size:45px;
+                                top: 35px;
+                            }
+                            .time-box{
+                                width:80px;
+                                margin: 5px;
+                                height: 110px;
+                                .top-box,.bottom-box{
+                                    width:100%; 
+                                    height: 50px
+                                }
+                            }
                         }
+                        p{
+                            font-size: 12px;
+                        }
+                    
                     }
                 }
             }
