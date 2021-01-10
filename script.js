@@ -1,7 +1,15 @@
 
-// set the date we're counting down to
-const  countdownDate = new Date("Jan 23, 2021 23:07:0").getTime();
+// set the date we're counting down to[14 days]
 
+var month = parseFloat(new Date().getMonth());
+
+var months =['Jan' ,'Feb', 'Mar', 'April', 'May', 'June', 'July', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+
+var todaysDate = parseFloat(new Date().getDate())
+var currentYear = parseFloat(new Date().getFullYear())
+
+var currentHour= parseFloat(new Date().getHours())
+var countdownDate= new Date(`${months[month]} ${todaysDate+14}, ${currentYear} ${currentHour}:00:00`).getTime();
 
 // update the count down every 1 second
 
@@ -35,7 +43,7 @@ const x = setInterval(()=>{
 
     // reset the counter to 14 days
 
-    // if(distance< 0){
-    //     Set
-    // }
+    if(distance< 0){
+        countdownDate = new Date(`${months[month]} ${todaysDate+14}, ${currentYear} ${currentHour}:00:00`).getTime()
+    }
 }, 1000)
